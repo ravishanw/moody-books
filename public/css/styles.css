@@ -1,0 +1,206 @@
+body {
+    background: linear-gradient(135deg, #183D3D,#040D12);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    height:100%;
+}
+.container-fluid {
+    min-height:100vh;
+    padding: 40px;
+}
+
+/* Nav panel */
+
+.nav-panel {
+    height:100%;
+    position:sticky;
+    text-align: center;
+    top: 40px;
+}
+.brand-block {
+    align-items: center;
+    background-color: #040D12;
+    border-radius: 8px;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.hamburger-toggle {
+    display: none;
+}
+h1 {
+    margin: auto 0;
+    font-family: 'Libre Baskerville', serif;
+}
+.moods-row {
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    flex-direction: column;
+    height: calc(100vh - 220px);
+    padding: 10px;
+}
+.moods-row h3 {
+    margin: 20px 0;
+}
+.moods-row form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.moods-row button {
+    background-color: transparent;
+    border-radius: 8px;
+    color:#fff;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 8px;
+}
+.moods-row button:hover {
+    background-color:rgba(255,255,255,0.2);
+}
+
+/* Main panel */
+
+.main-panel {
+    padding-left: 40px;
+}
+.card {
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color:#fff;
+    padding: 10px;
+    width: 18rem;
+}
+.card h6 {
+    margin: 10px 0 20px 0;
+}
+
+/* Current mood */
+
+.current-mood-col {
+    background-image: linear-gradient(to right, #183D3D,transparent), url("/images/root-banner.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height:120px;
+    justify-content: space-around;
+    padding: 20px;
+}
+.refresh-btn {
+    background-color: #040D12;
+    border-color: #040D12;
+    color:#fff;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 8px 15px;
+}
+.refresh-btn:hover {
+    border-color: #fff;
+}
+
+/* Info Row */
+
+.info-row {
+    margin-top: 20px;
+}
+
+/* Book row */
+
+.buy-btn {
+    background-color: #040D12;
+    color: #fff;
+    padding: 8px 15px;
+}
+.buy-btn:hover {
+    background-color: #183D3D;
+    border-color: #fff;
+}
+
+/* Media Queries */
+
+@media (max-width:1360px) {
+    .cards-row .card {
+        width:15rem;
+    }
+}
+@media (max-width:1165px) {
+    .cards-row .card {
+        width: 13rem;
+    }
+}
+@media (max-width:1030px) {
+    .cards-row .col {
+        margin-bottom:20px;
+    }
+}
+
+/* Toggle slider activated */
+
+@media (max-width:770px) {
+    .nav-row-wrapper {
+        height:80px;
+    }
+    .nav-panel {
+        position:fixed;
+        height:fit-content;
+        inset: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    .brand-block {
+        border-radius: 0;
+        height: 80px;
+        justify-content: flex-start;
+        padding-left:30px;
+        z-index:2000;
+    }
+    .current-mood-col {
+        /* justify-content: flex-start; */
+        padding: 10px;
+    }
+    .hamburger-toggle {
+        aspect-ratio: 1 /1;
+        background-image: url("/images/hamburger_icon.png");
+        background-color: transparent;
+        background-position-y: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+        display: block;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        z-index: 9999;
+    }
+    .main-panel {
+        margin-top:60px;
+        padding:0;
+    }
+    .moods-row {
+        background-color:rgba(24,61,61,0.5);
+        border-radius: 0 0 8px 8px;
+        display: block;
+        position:absolute;
+        transform:translateY(-100%);
+        transition: all 0.3s;
+        width:100%;
+    }
+    .toggle-slider {
+        transform:translateY(0);
+    }
+}
+@media(max-width:510px) {
+    .cards-row .card {
+        width:17rem;
+    }
+    .hamburger-toggle {
+        height:30px;
+        top:25px;
+    }
+}
