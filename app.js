@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
 const ejs = require("ejs");
-const port = 3000;
+const port = process.env.PORT || 3000;
 const buyLink = "https://www.penguinrandomhouse.com";
 const bookFx = require(__dirname + "/books.js");
 require('dotenv').config();
@@ -206,5 +206,5 @@ app.post("/jazz-bullets", async (req,res)=>{
 });
 
 app.listen(port,()=>{
-    console.log("Server started on port 3000");
+    console.log("Server started on port " + port);
 })
