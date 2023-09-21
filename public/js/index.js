@@ -6,24 +6,24 @@ $(document).ready(()=>{
     
     switch(currentMood){
         case "Sigh":
-            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/sigh-banner.jpg\")");
+            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/sigh-banner.JPG\")");
             break;
         
         case "Sith Lord":
-            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/sith-banner.jpg\")");
+            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/sith-banner.JPG\")");
             $(".current-mood-col").css("background-position","0 40%");
             break;
 
         case "I want to believe":
-            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/believe-banner.jpg\")");
+            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/believe-banner.JPG\")");
             break;
 
         case "Verily sayeth":
-            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/verily-banner.jpg\")");
+            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/verily-banner.JPG\")");
             break;
 
         case "Bullets, Jazz Bullets":
-            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/bullets-banner.jpg\")");
+            $(".current-mood-col").css("background-image","linear-gradient(to right, #183D3D,transparent), url(\"/images/bullets-banner.JPG\")");
             break;
 
 
