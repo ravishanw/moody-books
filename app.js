@@ -19,7 +19,7 @@ app.set('view engine','ejs');
 
 app.get("/", (req,res)=>{
     res.render('index',{
-        moodValue:"Select your mood from the panel on the left, or from the hamburger menu.",
+        moodValue:"Select your mood from the menu.",
         moodDescription:"Once you select your mood, three book suggestions will appear along with links to purchase them from Penguin-Random House.",
         refreshRoute:"/",
         bookImage1:"/images/placeholderCover.jpg",
